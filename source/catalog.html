@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-header.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__background">
+        <img src="img/welcome-form.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону.">
+      </div>
+    </header>
+    <main class="main-catalog main-container">
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <h2 class="gallery__title">Фото и видео</h2>
+          <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+        <div class="gallery__content">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img src="img/photo-1.jpg" width="1200" height="400" alt="Фото неродных просторов.">
+              <div class="description">
+                <h3 class="description__title">Неродные просторы</h3>
+                <p class="description__author">Автор фото: Борис</p>
+              </div>
+              <button class="gallery__like">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                  fill="none">
+                  <path fill="#000"
+                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                    opacity=".3" />
+                </svg>
+                1350
+              </button>
+            </li>
+            <li class="gallery__item">
+              <img src="img/photo-2.jpg" width="400" height="267" alt="Фото местной растительности.">
+              <div class="description">
+                <h3 class="description__title">Местная растительность</h3>
+                <p class="description__author">Автор фото: Сергей</p>
+              </div>
+              <button class="gallery__like">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                  fill="none">
+                  <path fill="#000"
+                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                    opacity=".3" />
+                </svg>
+                143
+              </button>
+            </li>
+            <li class="gallery__item">
+              <img src="img/photo-3.jpg" width="400" height="267" alt="Фото дороги, ведущей на север.">
+              <div class="description">
+                <h3 class="description__title">Дорога на север</h3>
+                <p class="description__author">Автор фото: Петр</p>
+              </div>
+              <button class="gallery__like">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                  fill="none">
+                  <path fill="#000"
+                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                    opacity=".3" />
+                </svg>
+                96
+              </button>
+            </li>
+            <li class="gallery__item">
+              <img src="img/photo-4.jpg" width="400" height="267" alt="Фото моста Дьявола.">
+              <div class="description">
+                <h3 class="description__title">Мост дьявола</h3>
+                <p class="description__author">Автор фото: Антон</p>
+              </div>
+              <button class="gallery__like">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                  fill="none">
+                  <path fill="#000"
+                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                    opacity=".3" />
+                </svg>
+                254
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__visit" href="#">#VisitSedona</a>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--vkontakte" href="#">
+            <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Вконтакте.</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--telegram" href="#">
+            <svg aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Телеграме.</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--youtube" href="#">
+            <svg aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Ютубе.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">
+          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
