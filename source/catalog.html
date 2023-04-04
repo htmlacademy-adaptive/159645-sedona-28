@@ -14,19 +14,13 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-          </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item main-nav__item--current">
             <a>Фото и видео</a>
           </li>
           <li class="main-nav__item">
@@ -37,90 +31,71 @@
           </li>
         </ul>
       </nav>
-      <div class="main-header__background">
-        <img src="img/welcome-form.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону.">
-      </div>
     </header>
-    <main class="main-catalog main-container">
+    <main class="main-catalog">
+      <section class="hero-inner">
+        <img class="hero-inner__image" src="img/welcome-inner.svg" width="229" height="39"
+          alt="Добро пожаловать в великолепную Седону.">
+      </section>
       <section class="gallery">
-        <div class="gallery__wrapper">
-          <h2 class="gallery__title">Фото и видео</h2>
-          <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <div class="gallery__intro">
+          <h2 class="gallery__title title">Фото и видео</h2>
+          <p class="gallery__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике и экономике.</p>
         </div>
         <div class="gallery__content">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="img/photo-1.jpg" width="1200" height="400" alt="Фото неродных просторов.">
-              <div class="description">
-                <h3 class="description__title">Неродные просторы</h3>
-                <p class="description__author">Автор фото: Борис</p>
+              <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
+              <div class="gallery__text text">
+                <h3 class="text__title">Неродные просторы</h3>
+                <p class="text__author">Автор фото: Борис</p>
               </div>
-              <button class="gallery__like">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
-                  fill="none">
-                  <path fill="#000"
-                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
-                    opacity=".3" />
-                </svg>
-                1350
+              <button class="gallery__likes likes">
+                <span class="likes__number">1350</span>
               </button>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-2.jpg" width="400" height="267" alt="Фото местной растительности.">
-              <div class="description">
-                <h3 class="description__title">Местная растительность</h3>
-                <p class="description__author">Автор фото: Сергей</p>
+              <img src="img/photo-2.jpg" width="280" height="280" alt="Фото местного кактуса с желтыми цветами.">
+              <div class="gallery__text text">
+                <h3 class="text__title">Местная растительность</h3>
+                <p class="text__author">Автор фото: Сергей</p>
               </div>
-              <button class="gallery__like">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
-                  fill="none">
-                  <path fill="#000"
-                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
-                    opacity=".3" />
-                </svg>
-                143
+              <button class="gallery__likes">
+                <span class="likes__number">143</span>
               </button>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-3.jpg" width="400" height="267" alt="Фото дороги, ведущей на север.">
-              <div class="description">
-                <h3 class="description__title">Дорога на север</h3>
-                <p class="description__author">Автор фото: Петр</p>
+              <img src="img/photo-3.jpg" width="280" height="280" alt="Фото дороги, ведущей на север среди деревьев.">
+              <div class="gallery__text text">
+                <h3 class="text__title">Дорога на север</h3>
+                <p class="text__author">Автор фото: Петр</p>
               </div>
-              <button class="gallery__like">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
-                  fill="none">
-                  <path fill="#000"
-                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
-                    opacity=".3" />
-                </svg>
-                96
+              <button class="gallery__likes">
+                <span class="likes__number">96</span>
               </button>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-4.jpg" width="400" height="267" alt="Фото моста Дьявола.">
-              <div class="description">
-                <h3 class="description__title">Мост дьявола</h3>
-                <p class="description__author">Автор фото: Антон</p>
+              <img src="img/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
+              <div class="gallery__text text">
+                <h3 class="text__title">Мост дьявола</h3>
+                <p class="text__author">Автор фото: Антон</p>
               </div>
-              <button class="gallery__like">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
-                  fill="none">
-                  <path fill="#000"
-                    d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
-                    opacity=".3" />
-                </svg>
-                254
+              <button class="gallery__likes">
+                <span class="likes__number">254</span>
               </button>
             </li>
           </ul>
         </div>
       </section>
       <section class="video">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        <h2 class="video__title title">Все еще сомневаетесь?</h2>
+        <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
+        <a class="video__link" href="#">
+          <img src="img/video.jpg" alt="">
+          <span class="button-play"></span>
+        </a>
       </section>
     </main>
     <footer class="main-footer">
@@ -162,7 +137,7 @@
       </ul>
       <div class="main-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path

@@ -14,12 +14,6 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-          </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -29,7 +23,7 @@
           <li class="main-nav__item">
             <a href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item main-nav__item--current">
             <a>Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
@@ -37,32 +31,34 @@
           </li>
         </ul>
       </nav>
-      <div class="main-header__background">
-        <img src="img/welcome-form.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону.">
-      </div>
     </header>
-    <main class="main-inner main-container">
+    <main class="main-inner">
+      <section class="hero-inner">
+        <img class="hero-inner__image" src="img/welcome-inner.svg" width="229" height="39"
+          alt="Добро пожаловать в великолепную Седону.">
+      </section>
       <section class="review">
         <div class="review__wrapper">
-          <h2 class="review__title">Оставьте свой отзыв</h2>
-          <p class="review__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          <h2 class="review__title title">Оставьте свой отзыв</h2>
+          <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами
             достопримечательностях</p>
         </div>
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="review-group">
-            <legend class="review-group__title">Представьтесь:</legend>
+            <legend class="review-group__title title">Представьтесь:</legend>
             <label class="review-group__label">Имя*:
-              <input class="review-group__input" type="text" placeholder="Пётр" required>
+              <input class="review-group__input" type="text" value="Пётр" placeholder="Имя" required>
             </label>
             <label class="review-group__label">Фамилия*:
-              <input class="review-group__input" type="text" placeholder="Пустота" required>
+              <input class="review-group__input" type="text" value="Пустота" placeholder="Фамилия" required>
             </label>
             <label class="review-group__label">Отчество:
-              <input class="review-group__input" type="text" placeholder="Викторович">
+              <input class="review-group__input" type="text" value="Викторович" placeholder="Отчество">
             </label>
           </fieldset>
           <fieldset class="review-group">
-            <legend class="review-group__title">Контактная информация:</legend>
+            <legend class="review-group__title title">Контактная информация:</legend>
             <label class="review-group__label">Контактный телефон*:
               <input class="review-group__input review-group__input--phone" type="tel" placeholder="Введите телефон"
                 required>
@@ -73,7 +69,7 @@
             </label>
           </fieldset>
           <fieldset class="review-group">
-            <legend class="review-group__title">Ваше общее впечатление:</legend>
+            <legend class="review-group__title title">Ваше общее впечатление:</legend>
             <ul class="review-group__list">
               <li class="review-group__item">
                 <label class="review-control">
@@ -100,7 +96,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-group">
-            <legend class="review-group__title">Посещенные достопримечательности:</legend>
+            <legend class="review-group__title title">Посещенные достопримечательности:</legend>
             <ul class="review-group__list">
               <li class="review-group__item">
                 <label class="review-control">
@@ -137,11 +133,11 @@
             </ul>
           </fieldset>
           <fieldset class="review-group">
-            <legend class="review-group__title">Опишите свои эмоции:</legend>
+            <legend class="review-group__title title">Опишите свои эмоции:</legend>
             <textarea class="review-group__text" name="text"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="review-form__button" type="submit">Отправить отзыв</button>
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
           <span class="review-form__legend">* ‒ Обязательные поля</span>
         </form>
       </section>
@@ -185,7 +181,7 @@
       </ul>
       <div class="main-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
