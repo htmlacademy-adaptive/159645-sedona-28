@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-header.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a>Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
+      <section class="hero-inner">
+        <img class="hero-inner__image" src="img/welcome-inner.svg" width="229" height="39"
+          alt="Добро пожаловать в великолепную Седону.">
+      </section>
+      <section class="review">
+        <div class="review__wrapper">
+          <h2 class="review__title title">Оставьте свой отзыв</h2>
+          <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами
+            достопримечательностях</p>
+        </div>
+        <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="review-group">
+            <legend class="review-group__title title">Представьтесь:</legend>
+            <label class="review-group__label">Имя*:
+              <input class="review-group__input" type="text" value="Пётр" placeholder="Имя" required>
+            </label>
+            <label class="review-group__label">Фамилия*:
+              <input class="review-group__input" type="text" value="Пустота" placeholder="Фамилия" required>
+            </label>
+            <label class="review-group__label">Отчество:
+              <input class="review-group__input" type="text" value="Викторович" placeholder="Отчество">
+            </label>
+          </fieldset>
+          <fieldset class="review-group">
+            <legend class="review-group__title title">Контактная информация:</legend>
+            <label class="review-group__label">Контактный телефон*:
+              <input class="review-group__input review-group__input--phone" type="tel" placeholder="Введите телефон"
+                required>
+            </label>
+            <label class="review-group__label">Электронная почта*:
+              <input class="review-group__input review-group__input--email" type="email" placeholder="Введите e-mail"
+                required>
+            </label>
+          </fieldset>
+          <fieldset class="review-group">
+            <legend class="review-group__title title">Ваше общее впечатление:</legend>
+            <ul class="review-group__list">
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="positive"
+                    checked>
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="negative">
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="difficult">
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="review-group">
+            <legend class="review-group__title title">Посещенные достопримечательности:</legend>
+            <ul class="review-group__list">
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+                    value="Devil's Bridge" checked>
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+                    value="mount Bell" checked>
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+                    value="slide park" checked>
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="review-group__item">
+                <label class="review-control">
+                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+                    value="red rocks">
+                  <span class="review-control__mark"></span>
+                  <span class="review-control__label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="review-group">
+            <legend class="review-group__title title">Опишите свои эмоции:</legend>
+            <textarea class="review-group__text" name="text"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          <span class="review-form__legend">* ‒ Обязательные поля</span>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__visit" href="#">#VisitSedona</a>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--vkontakte" href="#">
+            <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Вконтакте.</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--telegram" href="#">
+            <svg aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Телеграме.</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link main-footer__link--youtube" href="#">
+            <svg aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">Седона в Ютубе.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-container">
+    <div class="modal modal--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button" type="button">Ок</button>
+    </div>
+  </div>
+  <div class="modal-container">
+    <div class="modal modal--sent">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
+        на сайте.</p>
+      <button class="modal__button" type="button">Закрыть окно</button>
+    </div>
+  </div>
+</body>
+
+</html>
