@@ -7,15 +7,15 @@
 </head>
 
 <body class="page__body">
-  <div class="container">
+  <div class="page__wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-header.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню.</span>
+      </button>
+      <nav class="main-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -27,82 +27,94 @@
             <a href="form.html">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-catalog">
-      <section class="hero-inner">
+      <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
+      <section class="hero hero--inner">
+        <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
         <img class="hero-inner__image" src="img/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
-      <section class="gallery">
-        <div class="gallery__intro">
+      <section class="gallery container">
+        <div class="gallery__heading heading">
           <h2 class="gallery__title title">Фото и видео</h2>
-          <p class="gallery__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          <p class="gallery__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о
             политике и экономике.</p>
         </div>
-        <div class="gallery__content">
-          <ul class="gallery__list">
-            <li class="gallery__item">
-              <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
-              <div class="gallery__text text">
-                <h3 class="text__title">Неродные просторы</h3>
-                <p class="text__author">Автор фото: Борис</p>
-              </div>
-              <button class="gallery__likes likes">
-                <span class="likes__number">1350</span>
-              </button>
-            </li>
-            <li class="gallery__item">
-              <img src="img/photo-2.jpg" width="280" height="280" alt="Фото местного кактуса с желтыми цветами.">
-              <div class="gallery__text text">
-                <h3 class="text__title">Местная растительность</h3>
-                <p class="text__author">Автор фото: Сергей</p>
-              </div>
-              <button class="gallery__likes">
-                <span class="likes__number">143</span>
-              </button>
-            </li>
-            <li class="gallery__item">
-              <img src="img/photo-3.jpg" width="280" height="280" alt="Фото дороги, ведущей на север среди деревьев.">
-              <div class="gallery__text text">
-                <h3 class="text__title">Дорога на север</h3>
-                <p class="text__author">Автор фото: Петр</p>
-              </div>
-              <button class="gallery__likes">
-                <span class="likes__number">96</span>
-              </button>
-            </li>
-            <li class="gallery__item">
-              <img src="img/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
-              <div class="gallery__text text">
-                <h3 class="text__title">Мост дьявола</h3>
-                <p class="text__author">Автор фото: Антон</p>
-              </div>
-              <button class="gallery__likes">
-                <span class="likes__number">254</span>
-              </button>
-            </li>
-          </ul>
-        </div>
+        <ul class="gallery__list gallery-card">
+          <li class="gallery-card__item gallery-card__item--full">
+            <figure class="gallery-card__photo">
+              <a href="#">
+                <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
+              </a>
+              <figcaption class="gallery-card__text">
+                <h3 class="gallery-card__title">Неродные просторы</h3>
+                <p class="gallery-card__author">Автор фото: Борис</p>
+                <span class="gallery-card__counter">1350</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery-card__item">
+            <figure class="gallery-card__photo">
+              <a href="#">
+                <img src="img/photo-2.jpg" width="280" height="280" alt="Фото местного кактуса с желтыми цветами.">
+              </a>
+              <figcaption class="gallery-card__text">
+                <h3 class="gallery-card__title">Местная растительность</h3>
+                <p class="gallery-card__author">Автор фото: Сергей</p>
+                <span class="gallery-card__counter">143</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery-card__item">
+            <figure class="gallery-card__photo">
+              <a href="#">
+                <img src="img/photo-3.jpg" width="280" height="280" alt="Фото дороги, ведущей на север среди деревьев.">
+              </a>
+              <figcaption class="gallery-card__text">
+                <h3 class="gallery-card__title">Дорога на север</h3>
+                <p class="gallery-card__author">Автор фото: Петр</p>
+                <span class="gallery-card__counter">96</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery-card__item">
+            <figure class="gallery-card__photo">
+              <a href="#">
+                <img src="img/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
+              </a>
+              <figcaption class="gallery-card__text">
+                <h3 class="gallery-card__title">Мост дьявола</h3>
+                <p class="gallery-card__author">Автор фото: Антон</p>
+                <span class="gallery-card__counter">254</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
       <section class="video">
-        <h2 class="video__title title">Все еще сомневаетесь?</h2>
-        <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-          раз!</p>
-        <a class="video__link" href="#">
+        <div class="video__heading heading">
+          <h2 class="heading__title title">Все еще сомневаетесь?</h2>
+          <p class="heading__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!</p>
+        </div>
+        <div class="video__player">
           <img src="img/video.jpg" alt="">
-          <span class="button-play"></span>
-        </a>
+          <a class="video__player-control" href="#">
+          </a>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__visit" href="#">#VisitSedona</a>
       <ul class="main-footer__list">
         <li class="main-footer__item">
-          <a class="main-footer__link main-footer__link--vkontakte" href="#">
+          <a class="main-footer__link main-footer__link--vkontakte" href="#" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -113,7 +125,7 @@
           </a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link main-footer__link--telegram" href="#">
+          <a class="main-footer__link main-footer__link--telegram" href="#" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -124,7 +136,7 @@
           </a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link main-footer__link--youtube" href="#">
+          <a class="main-footer__link main-footer__link--youtube" href="#" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -136,8 +148,9 @@
         </li>
       </ul>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          rel="noopener noreferrer">
+          Разработано
           <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
