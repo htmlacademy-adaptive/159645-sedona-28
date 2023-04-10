@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-header.svg" width="185" height="96" alt="Логотип Седоны.">
+        <img class="main-header__logo-image" src="img/svg/logo-header.svg" width="185" height="96"
+          alt="Логотип Седоны.">
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
@@ -18,33 +20,33 @@
       <nav class="main-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a>Форма Отзыва</a>
+            <a class="main-nav__link" href="#">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML
+              Academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container">
       <h1 class="visually-hidden">Форма для отзыва о городке Седона.</h1>
       <section class="hero hero--inner">
         <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
-        <img class="hero-inner__image" src="img/welcome-inner.svg" width="229" height="39"
+        <img class="hero-inner__image" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="review">
         <div class="review__heading heading">
-          <h2 class="review__title title">Оставьте свой отзыв</h2>
-          <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами
-            достопримечательностях</p>
+          <h2 class="heading__title title">Оставьте свой отзыв</h2>
+          <p class="heading__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="review-group">
@@ -79,21 +81,21 @@
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="radio" name="impression" value="positive"
                     checked>
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--radio"></span>
                   <span class="review-control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="review-group__item">
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="radio" name="impression" value="negative">
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--radio"></span>
                   <span class="review-control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="review-group__item">
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="radio" name="impression" value="difficult">
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--radio"></span>
                   <span class="review-control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
@@ -106,7 +108,7 @@
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
                     value="Мост Дьявола" checked>
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--checkbox"></span>
                   <span class="review-control__label">Мост Дьявола</span>
                 </label>
               </li>
@@ -114,7 +116,7 @@
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
                     value="Гора-Колокол" checked>
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--checkbox"></span>
                   <span class="review-control__label">Гора-Колокол</span>
                 </label>
               </li>
@@ -122,7 +124,7 @@
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
                     value="Слайд-парк" checked>
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--checkbox"></span>
                   <span class="review-control__label">Слайд-парк</span>
                 </label>
               </li>
@@ -130,7 +132,7 @@
                 <label class="review-control">
                   <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
                     value="Красные скалы">
-                  <span class="review-control__mark"></span>
+                  <span class="review-control__mark review-control__mark--checkbox"></span>
                   <span class="review-control__label">Красные скалы</span>
                 </label>
               </li>
@@ -150,7 +152,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__visit" href="#">#VisitSedona</a>
+      <span class="main-footer__visit">#VisitSedona</span>
       <ul class="main-footer__list">
         <li class="main-footer__item">
           <a class="main-footer__link main-footer__link--vkontakte" href="#" target="_blank" rel="noopener noreferrer">

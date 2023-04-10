@@ -1,0 +1,32 @@
+.gallery__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gallery-card__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-card__author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    margin: 0;
+    padding: 0; 
+}
+
+.gallery-card__counter {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}

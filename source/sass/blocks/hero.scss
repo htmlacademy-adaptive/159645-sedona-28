@@ -1,0 +1,12 @@
+.hero {
+	min-height: 389px;
+	background-image: url("../img/svg/divider.svg"), url("../img/background/hero.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center bottom, center;
+	background-color: #c3dae8;
+}
+
+.hero--inner {
+	min-height: 158px;
+	background-image: url("../img/svg/divider.svg"), url("../img/background/hero-inner.jpg");
+}
