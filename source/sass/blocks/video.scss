@@ -1,0 +1,27 @@
+.video {
+  padding-top: 17px;
+
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding-top: 62px;
+    padding-bottom: 84px;
+  }
+}
+
+.video__heading {
+  margin-bottom: 38px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 64px;
+  }
+}

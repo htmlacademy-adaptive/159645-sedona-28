@@ -1,0 +1,59 @@
+.gallery-card__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+}
+
+.gallery-card__photo {
+  margin: 0;
+}
+
+.gallery-card__link {
+  display: block;
+  margin-bottom: 15px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 22px;
+  }
+}
+
+.gallery-card__text {
+  text-align: left;
+}
+
+.gallery-card__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.gallery-card__author {
+  margin: 0 0 16px 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-night-rider;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
+}
+
+.gallery-card__counter {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

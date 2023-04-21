@@ -1,3 +1,25 @@
-.title--inner {
-  font-size: 21px;
+.search {
+  padding: 38px 18px 49px 29px;
+
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    padding: 60px 155px 55px 155px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 60px 371px 66px 371px;
+  }
+}
+
+.search__title {
+  margin-bottom: 25px;
+}
+
+.search__description {
+  margin-bottom: 32px;
+}
+
+.search__button {
+  padding: 16px 20px;
 }

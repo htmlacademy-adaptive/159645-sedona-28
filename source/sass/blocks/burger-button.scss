@@ -1,0 +1,82 @@
+.burger-button {
+  position: relative;
+  z-index: 3;
+
+  display: block;
+  width: 23px;
+  height: 22px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: $color-seagull;
+
+    transition: all 01s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.burger-button__icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: $color-seagull;
+
+  transition: all 01s ease 0s;
+}
+
+.is-open .burger-button::before {
+  top: 9px;
+
+  background-color: $color-white;
+  transform: rotate(45deg);
+}
+
+.is-open {
+  & .burger-button::before {
+    top: 9px;
+
+    background-color: $color-white;
+    transform: rotate(45deg);
+  }
+
+  & .burger-button::after {
+    bottom: 9px;
+
+    background-color: $color-white;
+    transform: rotate(-45deg);
+  }
+
+  & .burger-button__icon {
+    transform: scale(0);
+  }
+}

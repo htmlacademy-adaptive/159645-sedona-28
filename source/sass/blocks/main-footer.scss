@@ -1,19 +1,80 @@
+.main-footer {
+  padding: 33px 82px;
+
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 36px 120px;
+  }
+}
+
 .main-footer__visit {
+  display: block;
+  margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin-right: 113px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-right: 270px;
+  }
 }
 
 .main-footer__list {
-  margin: 0;
+  display: grid;
+  margin: 0 0 30px 0;
   padding: 0;
+
   list-style-type: none;
+
+  gap: 6px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
 }
 
 .main-footer__link {
   display: block;
   width: 48px;
   height: 48px;
-  background-color: #81b3d2;
+
+  background-color: $color-seagull;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../img/svg/vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/svg/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/svg/youtube.svg");
+  }
+}
+
+.main-footer__copyright {
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
