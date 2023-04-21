@@ -1,0 +1,25 @@
+.main-header {
+  position: relative;
+
+  display: flex;
+  min-height: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translate(-50%);
+}
+
+.main-header__toggle {
+  margin-top: 17px;
+  margin-right: 20px;
+  margin-left: auto;
+}

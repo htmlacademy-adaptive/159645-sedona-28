@@ -1,8 +1,22 @@
+.copyright {
+  max-width: 129px;
+}
+
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
-  text-decoration: none;
+  color: $color-black;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.copyright__link-text {
+@media (min-width: $vp-768) {
+  margin-right: 12px;
+}
 }

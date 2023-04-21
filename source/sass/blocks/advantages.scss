@@ -1,33 +1,125 @@
-.advantages__card {
-  background-color: #81b3d2;
+.advantages {
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.title--white {
-  color: #ffffff;
+.advantages__heading {
+  padding: 32px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 48px 124px 56px 124px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 59px 357px 44px 356px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 11px;
+}
+
+.advantages__card {
+  margin: 0;
+
+  background-color: $color-seagull;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.advantages__card-text {
+  padding: 37px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 52px 33px 31px 33px;
+  }
 }
 
 .advantages__number {
+  display: block;
+  margin-bottom: 17px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
+  color: $color-night-rider;
   text-transform: uppercase;
-}
 
-.advantages__number--white {
-  color: #ffffff;
-}
-
-.description-white {
-  color: #ffffff;
+  &--white {
+    color: $color-white;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-.advantages__item-grey {
-  background-color: #eeeeee;
+.advantages__item {
+  padding: 24px 18px;
+
+  &--grey {
+    background-color: $color-whisper-light;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 41px 33px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 52px 50px;
+  }
+}
+
+.advantages__sublist {
+  margin: 0;
+  padding: 31px 18px 46px 65px;
+
+  list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__subitem {
+  margin-bottom: 33px;
+
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+    padding: 158px 33px 60px 33px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 169px 50px 69px 50px;
+  }
+}
+
+.advantages__subtitle {
+  margin-bottom: 16px;
 }
