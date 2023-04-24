@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/svg/logo-header.svg" width="185" height="96"
           alt="Логотип Седоны.">
@@ -41,7 +41,7 @@
       <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
       <section class="hero hero--inner">
         <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
-        <img class="hero-inner__image" src="img/svg/welcome-inner.svg" width="229" height="39"
+        <img class="hero__image" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="gallery container">
@@ -54,50 +54,70 @@
           <li class="gallery-card__item gallery-card__item--full">
             <figure class="gallery-card__photo">
               <a class="gallery-card__link" href="#">
-                <img src="img/content/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
+                <img class="gallery-card__image" src="img/content/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
               </a>
               <figcaption class="gallery-card__text">
-                <h3 class="gallery-card__title">Неродные просторы</h3>
-                <p class="gallery-card__author">Автор фото: Борис</p>
-                <span class="gallery-card__counter">1350</span>
+                <div class="gallery-card__wrapper">
+                  <h3 class="gallery-card__title">Неродные просторы</h3>
+                  <p class="gallery-card__author">Автор фото: Борис</p>
+                </div>
+                <button class="gallery-card__button" type="button">
+                  <span class="gallery-card__counter">1350</span>
+                  <span class="visually-hidden">Поставить лайк.</span>
+                </button>
               </figcaption>
             </figure>
           </li>
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
-              <a href="#">
-                <img src="img/content/photo-2.jpg" width="280" height="280"
+              <a class="gallery-card__link" href="#">
+                <img class="gallery-card__image" src="img/content/photo-2.jpg" width="280" height="280"
                   alt="Фото местного кактуса с желтыми цветами.">
               </a>
               <figcaption class="gallery-card__text">
+                <div class="gallery-card__wrapper">
                 <h3 class="gallery-card__title">Местная растительность</h3>
                 <p class="gallery-card__author">Автор фото: Сергей</p>
-                <span class="gallery-card__counter">143</span>
+                </div>
+                <button class="gallery-card__button" type="button">
+                  <span class="gallery-card__counter">143</span>
+                  <span class="visually-hidden">Поставить лайк.</span>
+                </button>
               </figcaption>
             </figure>
           </li>
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
-              <a href="#">
-                <img src="img/content/photo-3.jpg" width="280" height="280"
+              <a class="gallery-card__link" href="#">
+                <img class="gallery-card__image" src="img/content/photo-3.jpg" width="280" height="280"
                   alt="Фото дороги, ведущей на север среди деревьев.">
               </a>
-              <figcaption class="gallery-card__text">
+              <figcaption class="gallery-card__text gallery-card__text--whisper-back">
+                <div class="gallery-card__wrapper">
                 <h3 class="gallery-card__title">Дорога на север</h3>
                 <p class="gallery-card__author">Автор фото: Петр</p>
-                <span class="gallery-card__counter">96</span>
+                </div>
+                <button class="gallery-card__button" type="button">
+                  <span class="gallery-card__counter">96</span>
+                  <span class="visually-hidden">Поставить лайк.</span>
+                </button>
               </figcaption>
             </figure>
           </li>
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
-              <a href="#">
-                <img src="img/content/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
+              <a class="gallery-card__link" href="#">
+                <img class="gallery-card__image" src="img/content/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
               </a>
               <figcaption class="gallery-card__text">
+                <div class="gallery-card__wrapper">
                 <h3 class="gallery-card__title">Мост дьявола</h3>
                 <p class="gallery-card__author">Автор фото: Антон</p>
-                <span class="gallery-card__counter">254</span>
+                </div>
+                <button class="gallery-card__button" type="button">
+                  <span class="gallery-card__counter">254</span>
+                  <span class="visually-hidden">Поставить лайк.</span>
+                </button>
               </figcaption>
             </figure>
           </li>
@@ -149,6 +169,7 @@
       </div>
     </footer>
   </div>
+  <script  src="js/index.js"></script>
 </body>
 
 </html>

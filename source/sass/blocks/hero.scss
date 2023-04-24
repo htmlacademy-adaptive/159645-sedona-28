@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   background-color: $color-background-hero;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,6 +11,16 @@
     padding: 90px 19px 85px 19px;
 
     background-image: url("../img/background/hero.jpg");
+
+    @media (min-width: $vp-768) {
+      height: 518px;
+      padding: 77px 154px 91px 153px;
+    }
+
+    @media (min-width: $vp-1200) {
+      height: 518px;
+      padding: 77px 154px 91px 153px;
+    }
   }
 
   &--inner {
@@ -16,33 +28,33 @@
     padding: 52px 46px 67px 45px;
 
     background-image: url("../img/background/hero-inner.jpg");
+
+    @media (min-width: $vp-768) {
+      height: 290px;
+      padding: 95px 154px 117px 157px;
+    }
+
+    @media (min-width: $vp-1200) {
+      height: 301px;
+      padding: 95px 154px 117px 157px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 57px;
+
+    background-image: url("../img/svg/divider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
-@media (min-width: $vp-768) {
-  .hero--index {
-    height: 518px;
-    padding: 77px 154px 91px 153px;
-  }
-}
-
-@media (min-width: $vp-768) {
-  .hero--inner {
-    height: 290px;
-    padding: 95px 154px 117px 157px;
-  }
-}
-
-@media (min-width: $vp-1200) {
-  .hero--index {
-    height: 518px;
-    padding: 77px 154px 91px 153px;
-  }
-}
-
-@media (min-width: $vp-1200) {
-  .hero--inner {
-    height: 301px;
-    padding: 95px 154px 117px 157px;
-  }
+.hero__image {
+  margin: 0 auto;
 }
