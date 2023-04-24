@@ -8,6 +8,7 @@
 }
 
 .advantages__heading {
+  margin: 0 auto;
   padding: 32px 18px;
 
   @media (min-width: $vp-768) {
@@ -28,8 +29,22 @@
 
   background-color: $color-seagull;
 
+  &--divider {
+    clip-path: polygon(50% 4%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
   @media (min-width: $vp-768) {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    &--different {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    &--divider {
+      clip-path: none;
+    }
   }
 }
 
@@ -38,6 +53,10 @@
 
   @media (min-width: $vp-768) {
     padding: 52px 33px 31px 33px;
+
+    &--order {
+      order: 1;
+    }
   }
 }
 
@@ -100,6 +119,8 @@
 }
 
 .advantages__subitem {
+  position: relative;
+
   margin-bottom: 33px;
 
   text-align: left;
@@ -108,15 +129,49 @@
     margin-bottom: 0;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -48px;
+
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--house::before {
+    background-image: url(../img/svg/house-icon.svg);
+  }
+
+  &--food::before {
+    background-image: url(../img/svg/food-icon.svg);
+  }
+
+  &--souvenirs::before {
+    background-image: url(../img/svg/souvenirs-icon.svg);
+  }
+
   @media (min-width: $vp-768) {
     margin-bottom: 0;
     padding: 158px 33px 60px 33px;
 
     text-align: center;
+
+    &::before {
+      top: 62px;
+      left: 87px;
+    }
   }
 
   @media (min-width: $vp-1200) {
     padding: 169px 50px 69px 50px;
+
+    &::before {
+      top: 69px;
+      left: 159px;
+    }
   }
 }
 

@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
+    <header class="main-header no-js">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/svg/logo-header.svg" width="185" height="96"
           alt="Логотип Седоны.">
@@ -41,7 +41,7 @@
       <h1 class="visually-hidden">Форма для отзыва о городке Седона.</h1>
       <section class="hero hero--inner">
         <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
-        <img class="hero-inner__image" src="img/svg/welcome-inner.svg" width="229" height="39"
+        <img class="hero__image" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="review container">
@@ -50,106 +50,122 @@
           <p class="heading__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях</p>
         </div>
-        <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="review-group">
-            <legend class="review-group__title title">Представьтесь:</legend>
-            <label class="review-group__label">Имя*:
-              <input class="review-group__input" type="text" name="user-name" value="Пётр" placeholder="Имя" required>
-            </label>
-            <label class="review-group__label">Фамилия*:
-              <input class="review-group__input" type="text" name="user-surname" value="Пустота" placeholder="Фамилия"
-                required>
-            </label>
-            <label class="review-group__label">Отчество:
-              <input class="review-group__input" type="text" name="user-patronymic" value="Викторович"
-                placeholder="Отчество">
-            </label>
+        <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__group form__group--contacts">
+            <legend class="form__title title">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">Имя*:
+                  <input class="form__input" type="text" name="user-name" value="Пётр" placeholder="Имя" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Фамилия*:
+                  <input class="form__input" type="text" name="user-surname" value="Пустота" placeholder="Фамилия"
+                    required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Отчество:
+                  <input class="form__input" type="text" name="user-patronymic" value="Викторович"
+                    placeholder="Отчество">
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="review-group">
-            <legend class="review-group__title title">Контактная информация:</legend>
-            <label class="review-group__label">Контактный телефон*:
-              <input class="review-group__input review-group__input--phone" type="tel" name="user-tel"
-                placeholder="Введите телефон" required>
-            </label>
-            <label class="review-group__label">Электронная почта*:
-              <input class="review-group__input review-group__input--email" type="email" name="user-email"
-                placeholder="Введите e-mail" required>
-            </label>
+          <fieldset class="form__group form__group--information">
+            <legend class="form__title title">Контактная информация:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">Контактный телефон*:
+                  <input class="form__input form__input--phone" type="tel" name="user-tel" placeholder="Введите телефон"
+                    required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">Электронная почта*:
+                  <input class="form__input form__input--email" type="email" name="user-email"
+                    placeholder="Введите e-mail" required>
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="review-group">
-            <legend class="review-group__title title">Ваше общее впечатление:</legend>
-            <ul class="review-group__list">
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="positive"
+          <fieldset class="form__group form__group--impression">
+            <legend class="form__title form__title--impression title">Ваше общее впечатление:</legend>
+            <ul class="form__list form__list--radio">
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="impression" value="positive"
                     checked>
-                  <span class="review-control__mark review-control__mark--radio"></span>
-                  <span class="review-control__label">Скорее положительное</span>
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__control-label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="negative">
-                  <span class="review-control__mark review-control__mark--radio"></span>
-                  <span class="review-control__label">Скорее отрицательное</span>
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="impression" value="negative">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="radio" name="impression" value="difficult">
-                  <span class="review-control__mark review-control__mark--radio"></span>
-                  <span class="review-control__label">Затрудняюсь ответить</span>
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="radio" name="impression" value="difficult">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__control-label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-group">
-            <legend class="review-group__title title">Посещенные достопримечательности:</legend>
-            <ul class="review-group__list">
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+          <fieldset class="form__group form__group--attractions">
+            <legend class="form__title form__title--attractions title">Посещенные достопримечательности:</legend>
+            <ul class="form__list form__list--checkbox">
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="attractions"
                     value="Мост Дьявола" checked>
-                  <span class="review-control__mark review-control__mark--checkbox"></span>
-                  <span class="review-control__label">Мост Дьявола</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="attractions"
                     value="Гора-Колокол" checked>
-                  <span class="review-control__mark review-control__mark--checkbox"></span>
-                  <span class="review-control__label">Гора-Колокол</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="attractions"
                     value="Слайд-парк" checked>
-                  <span class="review-control__mark review-control__mark--checkbox"></span>
-                  <span class="review-control__label">Слайд-парк</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="review-group__item">
-                <label class="review-control">
-                  <input class="visually-hidden review-control__input" type="checkbox" name="attractions"
+              <li class="form__item form__item--choose">
+                <label class="form__control">
+                  <input class="visually-hidden form__control-input" type="checkbox" name="attractions"
                     value="Красные скалы">
-                  <span class="review-control__mark review-control__mark--checkbox"></span>
-                  <span class="review-control__label">Красные скалы</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control-label">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-group">
-            <legend class="review-group__title title">Опишите свои эмоции:</legend>
-            <label class="review-control">
+          <fieldset class="form__group form__group--comments">
+            <legend class="form__title title">Опишите свои эмоции:</legend>
+            <label class="form__comment">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
-              <textarea class="review-group__text" name="text"
+              <textarea class="form__comment-text" name="text"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-          <button class="review-form__button button" type="submit">Отправить отзыв</button>
-          <span class="review-form__legend">* ‒ Обязательные поля</span>
+          <div class="form__button-wrapper">
+            <button class="form__button button" type="submit">Отправить отзыв</button>
+            <span class="form__legend">* ‒ Обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
@@ -202,6 +218,7 @@
       <button class="modal__button button" type="button">Закрыть окно</button>
     </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

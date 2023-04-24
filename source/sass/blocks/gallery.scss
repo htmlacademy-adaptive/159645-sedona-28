@@ -3,10 +3,13 @@
 }
 
 .gallery__heading {
+  max-width: 280px;
+  margin: 0 auto;
   padding-top: 37px;
   padding-bottom: 25px;
 
   @media (min-width: $vp-768) {
+    max-width: 460px;
     padding-top: 66px;
     padding-bottom: 67px;
   }
@@ -15,11 +18,4 @@
     padding-top: 100px;
     padding-bottom: 65px;
   }
-}
-
-.gallery__list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
 }
