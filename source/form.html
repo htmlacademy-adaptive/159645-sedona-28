@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page__body">
@@ -41,7 +48,7 @@
       <h1 class="visually-hidden">Форма для отзыва о городке Седона.</h1>
       <section class="hero hero--inner">
         <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
-        <img class="hero__image" src="img/svg/welcome-inner.svg" width="229" height="39"
+        <img class="hero__image hero__image--inner" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="review container">
@@ -52,7 +59,7 @@
         </div>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form__group--contacts">
-            <legend class="form__title title">Представьтесь:</legend>
+            <h2 class="form__title title">Представьтесь:</h2>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label">Имя*:
@@ -74,7 +81,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--information">
-            <legend class="form__title title">Контактная информация:</legend>
+            <h2 class="form__title title">Контактная информация:</h2>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label">Контактный телефон*:
@@ -91,7 +98,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--impression">
-            <legend class="form__title form__title--impression title">Ваше общее впечатление:</legend>
+            <h2 class="form__title form__title--impression form__title--half title">Ваше общее впечатление:</h2>
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -118,7 +125,8 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--attractions">
-            <legend class="form__title form__title--attractions title">Посещенные достопримечательности:</legend>
+            <h2 class="form__title form__title--attractions form__title--half title">Посещенные
+              достопримечательности:</h2>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -155,7 +163,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--comments">
-            <legend class="form__title title">Опишите свои эмоции:</legend>
+            <h2 class="form__title form__title--half title">Опишите свои эмоции:</h2>
             <label class="form__comment">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
               <textarea class="form__comment-text" name="text"
@@ -191,31 +199,33 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           rel="noopener noreferrer">
-          Разработано
-          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
+          <span class="copyright__link-text">Разработано</span>
+          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
-              fill="black" />
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z" />
           </svg>
         </a>
       </div>
     </footer>
   </div>
 
-  <div class="modal">
+  <div class="modal modal-close">
     <div class="modal__wrapper modal__wrapper--error">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button" type="button">Ок</button>
+        <button class="modal__button button" type="button">Ок</button>
     </div>
   </div>
-  <div class="modal">
+  <div class="modal modal-close">
     <div class="modal__wrapper modal__wrapper--sent">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
-        на сайте.</p>
-      <button class="modal__button button" type="button">Закрыть окно</button>
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title modal__title--line title">Ваш отзыв отправлен!</h2>
+        <p class="modal__info modal__info--sent">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+      </div>
+        <div class="modal__wrapper-button">
+          <button class="modal__button modal__button--close button" type="button">Закрыть окно</button>
+        </div>
     </div>
   </div>
   <script src="js/index.js"></script>

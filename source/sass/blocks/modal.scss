@@ -1,0 +1,135 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color-black, 0.3);
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal__wrapper {
+  width: 320px;
+  margin: auto;
+
+  text-align: center;
+
+  background-color: $color-white;
+  box-shadow: 0 7px 15px rgba($color-black, 0.15);
+
+  &--error {
+    padding: 45px 42px 35px 41px;
+
+    @media (min-width: $vp-768) {
+      width: 400px;
+      padding: 50px 47px 49px 46px;
+    }
+
+    @media (min-width: $vp-1200) {
+      width: 400px;
+      padding-top: 48px;
+    }
+  }
+
+  &--sent {
+    @media (min-width: $vp-768) {
+      width: 640px;
+    }
+  }
+}
+
+.modal__wrapper-text {
+  padding: 44px 39px 34px 37px;
+
+  @media (min-width: $vp-768) {
+    padding: 53px 99px 30px 97px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding-top: 51px;
+    padding-bottom: 28px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+    line-height: 40px;
+
+    &--line {
+      line-height: 26px;
+    }
+  }
+}
+
+.modal__info {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-night-rider;
+  text-transform: uppercase;
+
+  &--sent {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 25px;
+
+    &--sent {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 23px;
+
+    &--sent {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal__wrapper-button {
+  width: 100%;
+  padding: 20px;
+
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    padding: 44px 91px;
+  }
+}
+
+.modal__button {
+  width: 180px;
+  margin: 0 auto;
+  padding: 18px 14px;
+
+  font-size: 18px;
+
+  &--close {
+    width: 280px;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 272px;
+
+    &--close {
+      width: 458px;
+    }
+  }
+}

@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page__body">
@@ -40,8 +47,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
       <section class="hero hero--inner">
-        <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
-        <img class="hero__image" src="img/svg/welcome-inner.svg" width="229" height="39"
+        <img class="hero__image hero__image--inner" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="gallery container">
@@ -54,7 +60,15 @@
           <li class="gallery-card__item gallery-card__item--full">
             <figure class="gallery-card__photo">
               <a class="gallery-card__link" href="#">
-                <img class="gallery-card__image" src="img/content/photo-1.jpg" width="280" height="280" alt="Дорога на фоне заката и природы.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/space-desktop.jpg 1x, img/content/space-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/space-tablet.jpg 1x, img/content/space-tablet@2x.jpg 2x">
+                  <img class="gallery-card__image" src="img/content/space-mobile.jpg"
+                    srcset="img/content/space-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Дорога на фоне заката и природы.">
+                </picture>
               </a>
               <figcaption class="gallery-card__text">
                 <div class="gallery-card__wrapper">
@@ -71,13 +85,20 @@
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
               <a class="gallery-card__link" href="#">
-                <img class="gallery-card__image" src="img/content/photo-2.jpg" width="280" height="280"
-                  alt="Фото местного кактуса с желтыми цветами.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/vegetation-desktop.jpg 1x, img/content/vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/vegetation-tablet.jpg 1x, img/content/vegetation-tablet@2x.jpg 2x">
+                  <img class="gallery-card__image" src="img/content/vegetation-mobile.jpg"
+                    srcset="img/content/vegetation-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Фото местного кактуса с желтыми цветами.">
+                </picture>
               </a>
               <figcaption class="gallery-card__text">
                 <div class="gallery-card__wrapper">
-                <h3 class="gallery-card__title">Местная растительность</h3>
-                <p class="gallery-card__author">Автор фото: Сергей</p>
+                  <h3 class="gallery-card__title">Местная растительность</h3>
+                  <p class="gallery-card__author">Автор фото: Сергей</p>
                 </div>
                 <button class="gallery-card__button" type="button">
                   <span class="gallery-card__counter">143</span>
@@ -89,13 +110,20 @@
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
               <a class="gallery-card__link" href="#">
-                <img class="gallery-card__image" src="img/content/photo-3.jpg" width="280" height="280"
-                  alt="Фото дороги, ведущей на север среди деревьев.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/road-desktop.jpg 1x, img/content/road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/road-tablet.jpg 1x, img/content/road-tablet@2x.jpg 2x">
+                  <img class="gallery-card__image" src="img/content/road-mobile.jpg"
+                    srcset="img/content/road-mobile@2x.jpg 2x" width="280" height="280"
+                    alt="Фото дороги, ведущей на север среди деревьев.">
+                </picture>
               </a>
               <figcaption class="gallery-card__text gallery-card__text--whisper-back">
                 <div class="gallery-card__wrapper">
-                <h3 class="gallery-card__title">Дорога на север</h3>
-                <p class="gallery-card__author">Автор фото: Петр</p>
+                  <h3 class="gallery-card__title">Дорога на север</h3>
+                  <p class="gallery-card__author">Автор фото: Петр</p>
                 </div>
                 <button class="gallery-card__button" type="button">
                   <span class="gallery-card__counter">96</span>
@@ -107,12 +135,19 @@
           <li class="gallery-card__item">
             <figure class="gallery-card__photo">
               <a class="gallery-card__link" href="#">
-                <img class="gallery-card__image" src="img/content/photo-4.jpg" width="280" height="280" alt="Фото моста Дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/bridge-desktop.jpg 1x, img/content/bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/bridge-tablet.jpg 1x, img/content/bridge-tablet@2x.jpg 2x">
+                  <img class="gallery-card__image" src="img/content/bridge-mobile.jpg"
+                    srcset="img/content/bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото моста Дьявола.">
+                </picture>
               </a>
               <figcaption class="gallery-card__text">
                 <div class="gallery-card__wrapper">
-                <h3 class="gallery-card__title">Мост дьявола</h3>
-                <p class="gallery-card__author">Автор фото: Антон</p>
+                  <h3 class="gallery-card__title">Мост дьявола</h3>
+                  <p class="gallery-card__author">Автор фото: Антон</p>
                 </div>
                 <button class="gallery-card__button" type="button">
                   <span class="gallery-card__counter">254</span>
@@ -130,7 +165,14 @@
             подорожали в очередной раз!</p>
         </div>
         <div class="video__player">
-          <img src="img/content/video.jpg" width="" height="" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile@2x.jpg 2x" width="280" height="177"
+              alt="Дорога, ведущая к Мосту Дьявола.">
+          </picture>
           <a class="video__player-control" href="#">
           </a>
         </div>
@@ -158,18 +200,17 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           rel="noopener noreferrer">
-          Разработано
-          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="none"
+          <span class="copyright__link-text">Разработано</span>
+          <svg aria-hidden="true" focusable="false" width="29" height="35" viewBox="0 0 29 35" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
-              fill="black" />
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"/>
           </svg>
         </a>
       </div>
     </footer>
   </div>
-  <script  src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
