@@ -3,10 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
   }
 }
 
 .form__group {
+  position: relative;
+
   margin: 24px 0 34px 0;
   padding: 0;
 
@@ -20,8 +23,36 @@
     margin-bottom: 56px;
   }
 
+  @media (max-width: ($vp-768 - 1px)) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: -20px;
+
+      width: calc(100% + 40px);
+      height: 1px;
+
+      background-color: $color-whisper-add;
+    }
+  }
+
   @media (min-width: $vp-768) {
     margin: 0 0 63px 0;
+
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: -29px;
+
+        width: 1px;
+        height: calc(100% + 16px);
+
+        background-color: $color-gainsboro;
+      }
+    }
 
     &--contacts {
       width: calc(50% - 29px);
@@ -71,11 +102,36 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
+    position: relative;
+
     margin-bottom: 28px;
 
     &--impression,
     &--attractions {
       margin-bottom: 38px;
+    }
+
+    &--half::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $color-gainsboro;
+      transform: translate(-100%, -50%);
+    }
+
+    &--half::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $color-gainsboro;
     }
   }
 
@@ -110,10 +166,24 @@
   font-family: "PT Sans", "Arial", sans-serif;
 
   background-color: $color-white-smoke;
+  background-repeat: no-repeat;
+  background-position: right;
   border: none;
 
   &::placeholder {
     color: rgba($color-black, 0.3);
+  }
+
+  &--phone {
+    padding-right: 60px;
+
+    background-image: url("../img/svg/phone-icon.svg");
+  }
+
+  &--email {
+    padding-right: 60px;
+
+    background-image: url("../img/svg/email-icon.svg");
   }
 }
 

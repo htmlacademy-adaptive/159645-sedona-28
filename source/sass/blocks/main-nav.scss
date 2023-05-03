@@ -60,8 +60,7 @@
       background: linear-gradient(to bottom, $transparent, $transparent);
     }
 
-    &:nth-child(3),
-    &:nth-child(7) {
+    &:nth-child(4n-1) {
       grid-column-start: 4;
     }
   }

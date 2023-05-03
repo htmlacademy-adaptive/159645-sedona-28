@@ -5,6 +5,7 @@
   display: block;
   width: 23px;
   height: 22px;
+  padding: 0;
 
   background-color: $transparent;
   border: none;
@@ -61,22 +62,20 @@
   transform: rotate(45deg);
 }
 
-.is-open {
-  & .burger-button::before {
-    top: 9px;
+.is-open .burger-button::before {
+  top: 9px;
 
-    background-color: $color-white;
-    transform: rotate(45deg);
-  }
+  background-color: $color-white;
+  transform: rotate(45deg);
+}
 
-  & .burger-button::after {
-    bottom: 9px;
+.is-open .burger-button::after {
+  bottom: 9px;
 
-    background-color: $color-white;
-    transform: rotate(-45deg);
-  }
+  background-color: $color-white;
+  transform: rotate(-45deg);
+}
 
-  & .burger-button__icon {
-    transform: scale(0);
-  }
+.is-open .burger-button__icon {
+  transform: scale(0);
 }
