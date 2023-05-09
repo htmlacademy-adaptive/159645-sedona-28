@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import webp from 'gulp-webp';
 
 // Styles
 
@@ -17,6 +18,14 @@ export const styles = () => {
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+const createWebp = () => {
+  const root = '';
+  return gulp
+    .src(`source/img/${root}**/*.{png,jpg}`)
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest(`source/img/${root}`));
+};
 
 // Server
 
@@ -41,5 +50,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  styles, createWebp, server, watcher
 );
