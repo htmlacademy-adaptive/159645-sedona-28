@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -125,8 +127,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--attractions">
-            <h2 class="form__title form__title--attractions form__title--half title">Посещенные
-              достопримечательности:</h2>
+            <h2 class="form__title form__title--attractions form__title--half title">Посещенные&ensp;<br>достопримечательности:</h2>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -200,8 +201,8 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           rel="noopener noreferrer">
           <span class="copyright__link-text">Разработано</span>
-          <svg aria-hidden="true" focusable="false" width="29" height="35">
-            <use xlink:href="sprite.svg#htmlacademy-icon"></use>
+          <svg class="copyright__image" aria-hidden="true" focusable="false" width="29" height="35">
+            <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
           </svg>
         </a>
       </div>
@@ -212,18 +213,19 @@
     <div class="modal__wrapper modal__wrapper--error">
       <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button" type="button">Ок</button>
+      <button class="modal__button button" type="button">Ок</button>
     </div>
   </div>
   <div class="modal modal-close">
     <div class="modal__wrapper modal__wrapper--sent">
       <div class="modal__wrapper-text">
         <h2 class="modal__title modal__title--line title">Ваш отзыв отправлен!</h2>
-        <p class="modal__info modal__info--sent">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+        <p class="modal__info modal__info--sent">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.
+          В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
       </div>
-        <div class="modal__wrapper-button">
-          <button class="modal__button modal__button--close button" type="button">Закрыть окно</button>
-        </div>
+      <div class="modal__wrapper-button">
+        <button class="modal__button modal__button--close button" type="button">Закрыть окно</button>
+      </div>
     </div>
   </div>
   <script src="js/index.js"></script>

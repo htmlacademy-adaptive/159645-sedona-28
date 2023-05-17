@@ -1,21 +1,31 @@
 .gallery {
+  margin: 0 20px 0 20px;
+
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin: 0 60px 0 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin: 0;
+  }
 }
 
 .gallery__heading {
   max-width: 280px;
   margin: 0 auto;
-  padding-top: 37px;
-  padding-bottom: 25px;
+  margin-top: 37px;
+  margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
     max-width: 460px;
-    padding-top: 66px;
-    padding-bottom: 67px;
+    margin-top: 66px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $vp-1200) {
-    padding-top: 100px;
-    padding-bottom: 65px;
+    margin-top: 100px;
+    margin-bottom: 65px;
   }
 }

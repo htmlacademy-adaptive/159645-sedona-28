@@ -54,10 +54,7 @@
       }
     }
 
-    &--contacts {
-      width: calc(50% - 29px);
-    }
-
+    &--contacts,
     &--information {
       width: calc(50% - 29px);
     }
@@ -80,6 +77,10 @@
 
   @media (min-width: $vp-1200) {
     margin-bottom: 71px;
+
+    &--contacts {
+      width: calc(50% - 49px);
+    }
 
     &--impression {
       margin-bottom: 83px;
@@ -115,20 +116,23 @@
       content: "";
       position: absolute;
       top: 50%;
+      left: 0;
 
       width: 100%;
+      max-width: 123px;
       height: 1px;
 
       background-color: $color-gainsboro;
-      transform: translate(-100%, -50%);
     }
 
     &--half::after {
       content: "";
       position: absolute;
       top: 50%;
+      right: 0;
 
       width: 100%;
+      max-width: 123px;
       height: 1px;
 
       background-color: $color-gainsboro;
@@ -142,6 +146,11 @@
 
     &--attractions {
       margin-bottom: 69px;
+    }
+
+    &--half::before,
+    &--half::after {
+      max-width: 280px;
     }
   }
 }
@@ -172,6 +181,8 @@
 
   &::placeholder {
     color: rgba($color-black, 0.3);
+
+    opacity: 1;
   }
 
   &--phone {
@@ -185,6 +196,20 @@
 
     background-image: url("../img/svg/email-icon.svg");
   }
+
+  &:hover {
+    background-color: $color-whisper-add;
+  }
+
+  &:focus-visible {
+    background-color: $color-white;
+    outline: none;
+    box-shadow: 0 0 0 4px $color-whisper-add inset;
+  }
+
+  &:disabled {
+    background-color: rgb($color-black, 0.3);
+  }
 }
 
 .form__list {
@@ -196,15 +221,18 @@
   list-style-type: none;
 
   @media (min-width: $vp-768) {
-    display: grid;
-    justify-content: center;
-
     &--radio {
+      display: grid;
+      justify-content: center;
+
       gap: 36px 16px;
       grid-template-columns: repeat(2, 280px);
     }
 
     &--checkbox {
+      display: grid;
+      justify-content: center;
+
       gap: 32px;
       grid-template-columns: repeat(2, 224px);
     }
@@ -235,8 +263,21 @@
   position: relative;
 
   display: block;
+  padding-left: 62px;
 
   cursor: pointer;
+
+  &:hover .form__control-mark {
+    background-color: $color-whisper-add;
+  }
+
+  &:active .form__control-mark {
+    background-color: $color-light-grey;
+  }
+
+  &:active .form__control-mark::before {
+    opacity: 0.3;
+  }
 }
 
 .form__control-mark {
@@ -288,8 +329,6 @@
 }
 
 .form__control-label {
-  padding-left: 62px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -313,6 +352,20 @@
 
   &::placeholder {
     color: rgba($color-black, 0.3);
+  }
+
+  &:hover {
+    background-color: $color-whisper-add;
+  }
+
+  &:focus-visible {
+    background-color: $color-white;
+    outline: none;
+    box-shadow: 0 0 0 4px $color-whisper-add inset;
+  }
+
+  &:disabled {
+    background-color: rgb($color-black, 0.3);
   }
 
   @media (min-width: $vp-768) {

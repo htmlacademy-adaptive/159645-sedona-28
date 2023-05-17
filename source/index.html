@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -53,12 +55,12 @@
       </section>
       <section class="advantages">
         <div class="advantages__heading heading">
-          <h2 class="heading__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="heading__title title title">Седона — небольшой городок&nbsp;в Аризоне, заслуживающий большего!</h2>
           <p class="heading__description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <figure class="advantages__card advantages__card--divider">
           <figcaption class="advantages__card-text">
-            <h3 class="advantages__title title title--white">Настоящий городок</h3>
+            <h3 class="advantages__title title title--white">Настоящий&ensp;<br>городок</h3>
             <span class="advantages__number advantages__number--white">— №1 —</span>
             <p class="advantages__description description description--white">Седона — не аттракцион для туристов, там
               течёт своя жизнь</p>
@@ -87,21 +89,20 @@
           </li>
           <li class="advantages__subitem advantages__subitem--food">
             <h3 class="advantages__subtitle title">Еда</h3>
-            <p class="advantages__subdescription description">Всегда заказывайте фирменный бургер, вы не
+            <p class="advantages__subdescription description">Всегда заказывайте фирменный бургер, вы&nbsp;не
               разочаруетесь!</p>
           </li>
           <li class="advantages__subitem advantages__subitem--souvenirs">
             <h3 class="advantages__subtitle title">Сувениры</h3>
-            <p class="advantages__subdescription description">Не только китайского, но и местного производства!
+            <p class="advantages__subdescription description">Не только китайского, но&nbsp;и&nbsp;местного&nbsp;производства!
             </p>
           </li>
         </ul>
         <figure class="advantages__card advantages__card--different">
           <figcaption class="advantages__card-text advantages__card-text--order">
-            <h3 class="advantages__title title title--white">Там есть мост дьявола</h3>
+            <h3 class="advantages__title title title--white">Там есть&ensp;<br>мост дьявола</h3>
             <span class="advantages__number advantages__number--white">— №2 —</span>
-            <p class="advantages__description description description--white">Да, по нему можно пройти! Если вы
-              осмелитесь, конечно</p>
+            <p class="advantages__description description description--white">Да, по нему можно пройти! Если&nbsp;вы&nbsp;осмелитесь, конечно</p>
           </figcaption>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
@@ -120,25 +121,25 @@
         </figure>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title title">Небольшая площадь</h3>
+            <h3 class="advantages__title title">Небольшая&ensp;<br>площадь</h3>
             <span class="advantages__number">— №3 —</span>
             <p class="advantages__description description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title title">Красивая дорога</h3>
+            <h3 class="advantages__title title">Красивая&ensp;<br>дорога</h3>
             <span class="advantages__number">— №4 —</span>
-            <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем&nbsp;<br>не&nbsp;скучно!</p>
           </li>
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title title">Мало туристов</h3>
+            <h3 class="advantages__title title">Мало&ensp;<br>туристов</h3>
             <span class="advantages__number">— №5 —</span>
             <p class="advantages__description description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="search">
-        <h2 class="search__title title title--big">Заинтересовались?</h2>
-        <p class="search__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <h2 class="search__title title title--big-size">Заинтересовались?</h2>
+        <p class="search__description description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
           предложения гостиниц в Седоне</p>
         <a class="search__button button" href="#">Найти гостиницу</a>
       </section>
@@ -186,8 +187,8 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           rel="noopener noreferrer">
           <span class="copyright__link-text">Разработано</span>
-          <svg aria-hidden="true" focusable="false" width="29" height="35">
-            <use xlink:href="sprite.svg#htmlacademy-icon"></use>
+          <svg class="copyright__image" aria-hidden="true" focusable="false" width="29" height="35">
+            <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
           </svg>
         </a>
       </div>

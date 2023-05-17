@@ -21,14 +21,13 @@
   }
 
   @media (min-width: $vp-768) {
+    position: static;
+
     display: flex;
-    padding: 18px 29px 17px 50px;
+    justify-content: center;
+    align-items: center;
 
     background-color: $transparent;
-  }
-
-  @media (min-width: $vp-1200) {
-    padding: 18px 71px 17px 91px;
   }
 }
 
@@ -54,6 +53,9 @@
   }
 
   @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: center;
+
     box-shadow: none;
 
     &:last-child {
@@ -78,6 +80,16 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-darken;
+  }
+
   @media (min-width: $vp-768) {
     padding: 0;
 
@@ -89,6 +101,23 @@
 
     &--current {
       color: $color-current-link;
+    }
+
+    &:hover {
+      color: $color-seagull;
+
+      background-color: $transparent;
+    }
+
+    &:active {
+      color: rgba($color-black, 0.3);
+
+      background-color: $transparent;
+    }
+
+    &:focus-visible {
+      outline: 2px $color-seagull solid;
+      outline-offset: 2px;
     }
   }
 }
