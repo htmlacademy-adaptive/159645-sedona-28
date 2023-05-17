@@ -12,4 +12,22 @@
   background-color: $color-seagull;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare-darken;
+    color:rgba($color-white, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px $color-seagull solid;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    background-color: $color-whisper-add;
+  }
 }

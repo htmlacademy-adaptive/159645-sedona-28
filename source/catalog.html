@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -50,15 +52,15 @@
         <img class="hero__image hero__image--inner" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
-      <section class="gallery container">
+      <section class="gallery">
         <div class="gallery__heading heading">
           <h2 class="heading__title title">Фото и видео</h2>
-          <p class="heading__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут
+          <p class="heading__description description">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут
             вам забыть о политике и экономике.</p>
         </div>
         <ul class="gallery__list gallery-card">
           <li class="gallery-card__item gallery-card__item--full">
-            <figure class="gallery-card__photo">
+            <figure class="gallery-card__photo gallery-card__photo--full">
               <a class="gallery-card__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
@@ -182,10 +184,10 @@
           </li>
         </ul>
       </section>
-      <section class="video container">
-        <div class="video__heading heading">
-          <h2 class="heading__title title">Все еще сомневаетесь?</h2>
-          <p class="heading__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+      <section class="video">
+        <div class="video__entry">
+          <h2 class="video__entry-title title">Все еще сомневаетесь?</h2>
+          <p class="video__entry-description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
             подорожали в очередной раз!</p>
         </div>
         <div class="video__player">
@@ -193,15 +195,14 @@
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/content/video-desktop.webp 1x, img/content/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/content/video-tablet.webp 1x, img/content/video-tablet@2x.webp 2x">
-            <source type="image/webp"
-            srcset="img/content/video-mobile.webp 1x, img/content/video-mobile@2x.webp 2x">
+              srcset="img/content/video-tablet.webp 1x, img/content/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/video-mobile.webp 1x, img/content/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
-            <img class="video__image" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile@2x.jpg 2x" width="280" height="177"
-              alt="Дорога, ведущая к Мосту Дьявола.">
+            <img class="video__image" src="img/content/video-mobile.jpg" srcset="img/content/video-mobile@2x.jpg 2x"
+              width="280" height="177" alt="Дорога, ведущая к Мосту Дьявола.">
           </picture>
           <a class="video__player-control" href="#">
           </a>
@@ -231,8 +232,8 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           rel="noopener noreferrer">
           <span class="copyright__link-text">Разработано</span>
-          <svg aria-hidden="true" focusable="false" width="29" height="35">
-            <use xlink:href="sprite.svg#htmlacademy-icon"></use>
+          <svg class="copyright__image" aria-hidden="true" focusable="false" width="29" height="35">
+            <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
           </svg>
         </a>
       </div>

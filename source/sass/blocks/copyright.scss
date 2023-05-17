@@ -1,4 +1,6 @@
 .copyright {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 129px;
 }
 
@@ -13,10 +15,25 @@
   color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: $color-seagull;
+  }
+
+  &:active {
+    color: $color-pink-swan;
+  }
+
+  &:focus-visible {
+    outline: 3px $color-seagull solid;
+    outline-offset: 2px;
+  }
 }
 
 .copyright__link-text {
-@media (min-width: $vp-768) {
-  margin-right: 12px;
+    margin-right: 12px;
 }
+
+.copyright__image {
+  flex-shrink: 0;
 }

@@ -11,12 +11,13 @@
 }
 
 .gallery-card__item {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
     width: 50%;
-    padding: 0;
+    margin: 0;
 
     &--full {
       width: 100%;
@@ -36,14 +37,32 @@
   @media (min-width: $vp-1200) {
     position: relative;
 
+    display: flex;
     height: 100%;
     padding-top: 187px;
+
+    &--full {
+      padding-top: 320px;
+    }
   }
 }
 
 .gallery-card__link {
   display: block;
   margin-bottom: 15px;
+  overflow: hidden;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-seagull;
+  }
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
@@ -64,10 +83,22 @@
   position: relative;
 
   @media (max-width: ($vp-768 - 1px)) {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
+      left: -20px;
+
+      width: calc(100% + 40px);
+      height: 1px;
+
+      background-color: $color-whisper-add;
+    }
+
+    &:last-child::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
       left: -20px;
 
       width: calc(100% + 40px);
@@ -117,6 +148,7 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
+    margin-right: 20px;
   }
 }
 
@@ -156,6 +188,18 @@
   background-color: $transparent;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-seagull;
+  }
 }
 
 

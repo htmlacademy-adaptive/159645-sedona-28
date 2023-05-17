@@ -17,6 +17,23 @@
 
   transform: translate(-50%);
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px $color-seagull solid;
+    outline-offset: 2px;
+  }
+
+  @media (min-width: $vp-768) {
+    z-index: 3;
+  }
 }
 
 .main-header__toggle {
