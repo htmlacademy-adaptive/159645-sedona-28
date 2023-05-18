@@ -4,9 +4,10 @@
   height: 389px;
   padding: 90px 19px 85px 19px;
 
-  background-color: $color-background-hero;
+  background-color: $color-pattens-blue;
   background-image: url("../img/background/hero.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
@@ -28,6 +29,7 @@
     padding: 52px 46px 67px 45px;
 
     background-image: url("../img/background/hero-inner.jpg");
+    background-position: right;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/hero-inner@2x.jpg");
@@ -40,7 +42,7 @@
 
     @media (min-width: $vp-1200) {
       height: 301px;
-      padding: 95px 154px 117px 157px;
+      padding: 102px 154px 117px 157px;
     }
   }
 
