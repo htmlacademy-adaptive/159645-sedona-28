@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 33px 82px;
+  padding: 41px 82px;
 
   text-align: center;
+
+  &--padding-catalog {
+    padding-top: 33px;
+  }
 
   @media (min-width: $vp-768) {
     flex-direction: row;

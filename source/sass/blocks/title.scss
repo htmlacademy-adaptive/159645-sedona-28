@@ -17,5 +17,13 @@
 
   @media (min-width: $vp-768) {
     font-size: 21px;
+
+    &--big-size {
+      font-size: 30px;
+    }
+
+    &--size-video {
+      font-size: 30px;
+    }
   }
 }

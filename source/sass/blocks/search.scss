@@ -1,5 +1,5 @@
 .search {
-  padding: 38px 29px 49px 29px;
+  padding: 41px 29px 49px 29px;
 
   text-align: center;
 
@@ -8,16 +8,24 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 60px 371px 66px 371px;
+    padding: 58px 371px 66px 371px;
   }
 }
 
 .search__title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 33px;
+  }
 }
 
 .search__description {
   margin-bottom: 32px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 44px;
+  }
 }
 
 .search__button {
