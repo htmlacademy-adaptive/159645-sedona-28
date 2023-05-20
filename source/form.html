@@ -20,7 +20,7 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header no-js">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу.">
         <img class="main-header__logo-image" src="img/svg/logo-header.svg" width="185" height="96"
           alt="Логотип Седоны.">
       </a>
@@ -47,52 +47,57 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Форма для отзыва о городке Седона.</h1>
       <section class="hero hero--inner">
-        <h2 class="visually-hidden">Добро пожаловать в великолепную Седону.</h2>
+        <h1 class="visually-hidden">Форма для отзыва о городке Седона.</h1>
         <img class="hero__image hero__image--inner" src="img/svg/welcome-inner.svg" width="229" height="39"
           alt="Добро пожаловать в великолепную Седону.">
       </section>
       <section class="review container">
         <div class="review__heading">
-          <h2 class="review__heading-title title">Оставьте свой отзыв</h2>
-          <p class="review__heading-description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          <h2 class="review__heading-title title title--big-size">Оставьте свой отзыв</h2>
+          <p class="review__heading-description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
+            также о
             посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group form__group--contacts">
-            <h2 class="form__title title">Представьтесь:</h2>
+          <fieldset class="form__group form__group--contacts form__group--half">
+            <legend class="form__title title">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label">Имя*:
+                <label class="form__label">
+                  <span class="form__label-name">Имя*:</span>
                   <input class="form__input" type="text" name="user-name" value="Пётр" placeholder="Имя" required>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label">Фамилия*:
+                <label class="form__label">
+                  <span class="form__label-name">Фамилия*:</span>
                   <input class="form__input" type="text" name="user-surname" value="Пустота" placeholder="Фамилия"
                     required>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label">Отчество:
+                <label class="form__label">
+                  <span class="form__label-name">Отчество:</span>
                   <input class="form__input" type="text" name="user-patronymic" value="Викторович"
                     placeholder="Отчество">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--information">
-            <h2 class="form__title title">Контактная информация:</h2>
+          <fieldset class="form__group form__group--half">
+            <legend class="form__title title">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label">Контактный телефон*:
+                <label class="form__label">
+                  <span class="form__label-name">Контактный телефон*:</span>
                   <input class="form__input form__input--phone" type="tel" name="user-tel" placeholder="Введите телефон"
                     required>
                 </label>
               </li>
               <li class="form__item">
-                <label class="form__label">Электронная почта*:
+                <label class="form__label">
+                  <span class="form__label-name">Электронная почта*:</span>
                   <input class="form__input form__input--email" type="email" name="user-email"
                     placeholder="Введите e-mail" required>
                 </label>
@@ -100,7 +105,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--impression">
-            <h2 class="form__title form__title--impression form__title--half title">Ваше общее впечатление:</h2>
+            <legend class="form__title form__title--big-margin title">Ваше общее впечатление:</legend>
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -127,7 +132,8 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--attractions">
-            <h2 class="form__title form__title--attractions form__title--half title">Посещенные&ensp;<br>достопримечательности:</h2>
+            <legend class="form__title form__title--big-margin title">Посещенные&ensp;<br>достопримечательности:
+            </legend>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -164,7 +170,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--comments">
-            <h2 class="form__title form__title--half title">Опишите свои эмоции:</h2>
+            <legend class="form__title title">Опишите свои эмоции:</legend>
             <label class="form__comment">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
               <textarea class="form__comment-text" name="text"
@@ -178,7 +184,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--padding-inner">
       <span class="main-footer__visit">#VisitSedona</span>
       <ul class="main-footer__list">
         <li class="main-footer__item">
@@ -209,6 +215,7 @@
     </footer>
   </div>
 
+  <!-- Для того, чтобы открыть модальное окно, нужно добавить класс is-open -->
   <div class="modal modal-close">
     <div class="modal__wrapper modal__wrapper--error">
       <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>

@@ -8,14 +8,24 @@
 
   @media (min-width: $vp-768) {
     max-width: 440px;
-    margin-bottom: 108px;
+    margin-top: 64px;
+    margin-bottom: 109px;
   }
 
   @media (min-width: $vp-1200) {
+    margin-top: 115px;
     margin-bottom: 68px;
   }
 }
 
 .review__heading-title {
   margin-bottom: 25px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 32px;
+  }
 }
