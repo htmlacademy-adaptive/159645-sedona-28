@@ -12,6 +12,7 @@
 
 .gallery-card__item {
   position: relative;
+
   display: block;
   margin-top: 49px;
   margin-bottom: 25px;
@@ -53,11 +54,11 @@
     &--full {
       width: 100%;
     }
+  }
 
-    @media (min-width: $vp-1200) {
-      &:not(&--full) {
-        width: calc(100% / 3);
-      }
+  @media (min-width: $vp-1200) {
+    &:not(&--full) {
+      width: calc(100% / 3);
     }
   }
 }
@@ -124,7 +125,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 14px 15px 20px;
+    padding: 23px 14px 15px 20px;
 
     background-color: $color-white-smoke;
 
@@ -138,7 +139,7 @@
     z-index: 1;
 
     width: 100%;
-    padding: 21px 12px 17px 25px;
+    padding: 21px 13px 17px 25px;
 
     background-color: rgb($color-black, 0.3);
   }
@@ -148,8 +149,8 @@
   margin-bottom: 16px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 0;
     margin-right: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -184,7 +185,7 @@
 .gallery-card__button {
   position: relative;
 
-  padding-left: 37px;
+  padding-left: 38px;
 
   background-color: $transparent;
   border: none;
@@ -203,7 +204,6 @@
   }
 }
 
-
 .gallery-card__counter {
   margin: 0;
   padding: 0;
@@ -214,22 +214,28 @@
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
-  @media (min-width: $vp-1200) {
-    color: $color-white;
-  }
-
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -4px;
     left: 0;
 
     width: 23px;
     height: 21px;
 
     background-image: url("../img/svg/like-icon.svg");
+  }
 
-    @media (min-width: $vp-1200) {
+  @media (min-width: $vp-768) {
+    &::before {
+      left: 5px;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    color: $color-white;
+
+    &::before {
       background-image: url("../img/svg/like-icon-white.svg");
     }
   }

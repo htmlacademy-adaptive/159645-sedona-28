@@ -28,12 +28,24 @@
     outline: 3px $color-seagull solid;
     outline-offset: 2px;
   }
+
+  @media (min-width: $vp-768) {
+    align-items: start;
+  }
 }
 
 .copyright__link-text {
-    margin-right: 12px;
+  margin-right: 12px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 15px;
+  }
 }
 
 .copyright__image {
   flex-shrink: 0;
+
+  @media (min-width: $vp-768) {
+    margin-top: 7px;
+  }
 }

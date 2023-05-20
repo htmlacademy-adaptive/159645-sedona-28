@@ -9,6 +9,10 @@
   height: 100%;
 
   background-color: rgba($color-black, 0.3);
+
+  &.is-open {
+    display: flex;
+  }
 }
 
 .modal-close {
@@ -88,18 +92,10 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 25px;
-
-    &--sent {
-      margin-bottom: 0;
-    }
   }
 
   @media (min-width: $vp-1200) {
     margin-bottom: 23px;
-
-    &--sent {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -123,13 +119,13 @@
 
   &--close {
     width: 280px;
+
+    @media (min-width: $vp-768) {
+      width: 458px;
+    }
   }
 
   @media (min-width: $vp-768) {
     width: 272px;
-
-    &--close {
-      width: 458px;
-    }
   }
 }
