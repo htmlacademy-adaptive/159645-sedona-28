@@ -4,7 +4,7 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
-    padding: 58px 60px 40px 60px;
+    padding: 56px 60px 40px 60px;
   }
 
   @media (min-width: $vp-1200) {
@@ -25,10 +25,19 @@
 }
 
 .video__entry-title {
+  margin: 0;
   margin-bottom: 27px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+
+    font-size: 30px;
   }
 }
 

@@ -6,7 +6,7 @@
 
   text-align: center;
 
-  &--padding-catalog {
+  &--padding-inner {
     padding-top: 33px;
   }
 
@@ -14,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 36px 60px;
+    align-items: start;
   }
 
   @media (min-width: $vp-1200) {
@@ -32,6 +33,7 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
+    margin-top: 12px;
     margin-bottom: 0;
   }
 }

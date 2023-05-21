@@ -26,14 +26,27 @@
 
   @media (min-width: $vp-1200) {
     margin-top: 100px;
-    margin-bottom: 86px;
+    margin-bottom: 89px;
   }
 }
 
 .gallery__heading-title {
+  margin: 0;
   margin-bottom: 25px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 
   @media (min-width: $vp-768) {
     margin-bottom: 33px;
+
+    font-size: 30px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 30px;
   }
 }
