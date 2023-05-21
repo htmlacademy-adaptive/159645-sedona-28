@@ -70,13 +70,6 @@
   transform: rotate(45deg);
 }
 
-.is-open .burger-button::before {
-  top: 9px;
-
-  background-color: $color-white;
-  transform: rotate(45deg);
-}
-
 .is-open .burger-button::after {
   bottom: 9px;
 

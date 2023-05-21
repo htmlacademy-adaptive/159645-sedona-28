@@ -18,8 +18,9 @@
   }
 
   &:active {
+    color: rgba($color-white, 0.3);
+
     background-color: $color-shakespeare-darken;
-    color:rgba($color-white, 0.3);
   }
 
   &:focus-visible {

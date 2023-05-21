@@ -10,11 +10,11 @@
 
   &--white {
     color: $color-white;
-    }
+  }
 
-    @media (max-width: ($vp-768 - 1px)) {
-      br {
-        display: none;
-      }
+  @media (max-width: ($vp-768 - 1px)) {
+    br {
+      display: none;
     }
   }
+}

@@ -200,7 +200,7 @@
   }
 
   &--house::before {
-    background-image: url(../img/svg/house-icon.svg);
+    background-image: url("../img/svg/house-icon.svg");
 
     @media (min-width: $vp-768) {
       top: 58px;
@@ -224,7 +224,7 @@
   }
 
   &--food::before {
-    background-image: url(../img/svg/food-icon.svg);
+    background-image: url("../img/svg/food-icon.svg");
 
     @media (min-width: $vp-768) {
       top: 60px;
@@ -248,7 +248,7 @@
   }
 
   &--souvenirs::before {
-    background-image: url(../img/svg/souvenirs-icon.svg);
+    background-image: url("../img/svg/souvenirs-icon.svg");
 
     @media (min-width: $vp-768) {
       top: 64px;
