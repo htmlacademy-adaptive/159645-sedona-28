@@ -8,10 +8,10 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -52,13 +52,13 @@
       </section>
       <section class="review container">
         <div class="review__heading">
-          <h2 class="review__heading-title title title--big-size">Оставьте свой отзыв</h2>
-          <p class="review__heading-description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
+          <h2 class="review__heading-title">Оставьте свой отзыв</h2>
+          <p class="review__heading-description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
             также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group form__group--contacts form__group--half">
-            <legend class="form__title title">Представьтесь:</legend>
+            <legend class="form__title">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label">
@@ -83,7 +83,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--half">
-            <legend class="form__title title">Контактная информация:</legend>
+            <legend class="form__title">Контактная информация:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label">
@@ -102,7 +102,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--impression">
-            <legend class="form__title form__title--big-margin title">Ваше общее впечатление:</legend>
+            <legend class="form__title form__title--big-margin">Ваше общее впечатление:</legend>
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--choose">
                 <label class="form__control">
@@ -129,7 +129,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--attractions">
-            <legend class="form__title form__title--big-margin title">Посещенные&ensp;<br>достопримечательности:
+            <legend class="form__title form__title--big-margin">Посещенные&ensp;<br>достопримечательности:
             </legend>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--choose">
@@ -167,7 +167,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--comments">
-            <legend class="form__title title">Опишите свои эмоции:</legend>
+            <legend class="form__title">Опишите свои эмоции:</legend>
             <label class="form__comment">
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
               <textarea class="form__comment-text" name="text"
@@ -213,17 +213,17 @@
   </div>
 
   <!-- Для того, чтобы открыть модальное окно, нужно добавить класс is-open -->
-  <div class="modal modal-close">
+  <div class="modal">
     <div class="modal__wrapper modal__wrapper--error">
-      <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
+      <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal__button button" type="button">Ок</button>
     </div>
   </div>
-  <div class="modal modal-close">
+  <div class="modal">
     <div class="modal__wrapper modal__wrapper--sent">
       <div class="modal__wrapper-text">
-        <h2 class="modal__title modal__title--line title">Ваш отзыв отправлен!</h2>
+        <h2 class="modal__title modal__title--line">Ваш отзыв отправлен!</h2>
         <p class="modal__info modal__info--sent">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.
           В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
       </div>

@@ -22,7 +22,7 @@
 
     background-color: $color-seagull;
 
-    transition: all 01s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 
   &::before {
@@ -60,7 +60,7 @@
 
   background-color: $color-seagull;
 
-  transition: all 01s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .is-open .burger-button::before {
@@ -78,5 +78,5 @@
 }
 
 .is-open .burger-button__icon {
-  transform: scale(0);
+  height: 0;
 }
