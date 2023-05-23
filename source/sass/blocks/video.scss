@@ -42,8 +42,14 @@
 }
 
 .video__entry-description {
-  padding-right: 6px;
-  padding-left: 8px;
+  margin: 0;
+  padding: 0 6px 0 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-night-rider;
+  text-transform: uppercase;
 
   @media (min-width: $vp-768) {
     padding-right: 102px;

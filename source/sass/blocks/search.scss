@@ -1,10 +1,10 @@
 .search {
-  padding: 41px 29px 49px 29px;
+  padding: 41px 0 49px 0;
 
   text-align: center;
 
   @media (min-width: $vp-768) {
-    padding: 60px 155px 55px 155px;
+    padding: 57px 155px 55px 155px;
   }
 
   @media (min-width: $vp-1200) {
@@ -13,21 +13,44 @@
 }
 
 .search__title {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
+
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
 .search__description {
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
+  padding: 0 29px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-night-rider;
+  text-transform: uppercase;
 
   @media (min-width: $vp-768) {
     margin-bottom: 44px;
+    padding: 0;
   }
 }
 
 .search__button {
+  max-width: 284px;
+  margin: 0 auto;
   padding: 16px 20px;
+
+  @media (min-width: $vp-768) {
+    max-width: 458px;
+  }
 }
